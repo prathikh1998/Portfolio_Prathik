@@ -1,1 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.jpeg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.jpeg" />
+
+    <!-- Animate CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Prathik Hegde | Former Infosys Developer </title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <h1>PRATHIK CHANDRA HEGDE</h1>
+        <ul class="navigation">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li>
+                <a href="#" class="nav-link" onclick="toggleResumeDropdown()">Resume &#9662;</a>
+                <ul class="resume-dropdown" id="resume-dropdown">
+                    <li><a href="#" onclick="previewResume()">Preview</a></li>
+                </ul>
+            </li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+            <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero" id="about">
+        <img src="images/pic.jpeg" alt="prathik" loading="lazy" class="hero-img" />
+        <div class="bio animate__animated animate__shakeX">
+            <h2 class="bio-title">About Me</h2>
+            <p class="bio-text">
+                Aspiring tech professional with 2 years of experience as a System Engineer at Infosys and currently
+                pursuing a Masters at UTA. Experienced in collaborating with cross-functional teams to deliver complex
+                software projects, conducting testing, and troubleshooting for high-quality software products. Seeking
+                opportunities to further develop my skills and contribute to innovative software teams
+            </p>
+        </div>
+    </section>
+
+    <!-- More about -->
+    <section class="more-about">
+        <h2>More About Me</h2>
+        <p>
+            Hey there!
+
+            I'm a tech enthusiast with 2 years of experience as a System Engineer at a multinational IT company,
+            currently pursuing a Masters in Computer Science. While problem-solving and innovation have been the focal
+            points of my professional journey, there's more to me than just work.
+
+            In the realm of software development, I find immense joy in exploring the art of creating digital
+            experiences. Collaborating with diverse teams to bring complex projects to life fuels my passion for
+            creating meaningful solutions that impact people's lives.
+
+        </p>
+        <p>
+
+            Beyond technology, you'll often find me immersed in my hobbies. As an outdoor enthusiast, I love venturing
+            into nature's playground, seeking scenic trails and peaceful moments amidst the great outdoors. Capturing
+            life's beautiful moments through photography is my way of sharing the wonders of the world with others.
+
+            Books are my constant companions, with a preference for science fiction and self-improvement genres. I
+            believe in the power of words to broaden our horizons and inspire personal growth.
+        </p>
+        <p>
+            What drives me in my career is a thirst for knowledge and a commitment to continuous learning. Embracing new
+            ideas and staying curious about emerging trends is vital to me.
+
+            As I continue my education and exploration, I'm eager to leverage my skills and passions to contribute to a
+            dynamic and innovative team. Whether it's creating digital experiences, collaborating on projects, or any
+            role that aligns with my interests, I'm excited to embrace new opportunities and make a positive impact.
+
+            Let's connect and embark on this journey together!
+        </p>
+
+        </p>
+    </section>
+
+    <!-- Skills section -->
+
+    <section class="skills" id="skills">
+        <h2 class="skill-header">My Skills</h2>
+
+        <div class="skills-wrapper">
+            <div class="second-set animate__animated animate__pulse">
+                <img src="icons/icons8-java.svg" alt="" loading="lazy" class="icon icon-card" />
+                <img src="icons/icons8-python.svg" alt="" loading="lazy" class="icon icon-card" />
+                <img src="icons/icons8-myql.svg" alt="" loading="lazy" class="icon icon-card" />
+            </div>
+            <div class="first-set animate__animated animate__pulse">
+                <img src="icons/icons8-html-5.svg" alt="" loading="lazy" class="icon icon-card" />
+                <img src="icons/icons8-css3.svg" alt="" loading="lazy" class="icon icon-card" />
+                <img src="icons/icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card" />
+            </div>
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <h2 class="experience-title">Experience</h2>
+        <div class="experience-container">
+            <!-- Your experience entries here -->
+            <div class="experience-entry">
+                <img src="images/infosys-logo-jpeg.jpg" alt="Infosys Ltd." class="company-logo experience-logo"
+                    onclick="toggleDetails('infosys-details')" />
+                <p class="experience-job-info">Full-Time Emp | Oct 2020 - Aug 2022</p>
+                <div class="experience-details" id="infosys-details">
+                    <h3 class="experience-job-title">Senior System Engineer</h3>
+                    <p class="experience-job-info">FULL-TIME | Oct 2020 - Aug 2022 | Mangalore, India</p>
+                    <ul class="experience-description">
+                        <li>Collaborated with a team of developers to create a scalable integration framework that
+                            enabled a client to process 50 percent more data without any impact on system performance.
+                        </li>
+                        <li>Successfully integrated systems for multiple clients, resulting in a 25 percent reduction in
+                            manual data entry and a 20 percent increase in overall efficiency.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- INFOSYS | System Engineer Intern -->
+            <div class="experience-entry">
+                <img src="images/infosys-logo-jpeg.jpg" alt="Infosys Ltd." class="company-logo experience-logo"
+                    onclick="toggleDetails('intern-details')" />
+                <p class="experience-job-info">Summer Intern | Apr 2020 - Sep 2020</p>
+                <div class="experience-details" id="intern-details">
+                    <h3 class="experience-job-title">System Engineer Intern</h3>
+                    <p class="experience-job-info">SUMMER INTERN | Apr 2020 - Sep 2020 | Mysore, India</p>
+                    <ul class="experience-description">
+                        <li>Collaborated with a team of developers to design and develop a website project, leveraging
+                            industry-standard tools and methodologies to ensure high-quality deliverables.</li>
+                        <li>Played an active role in the entire software development lifecycle, from requirements
+                            gathering and design to coding, testing, and deployment.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- MINDANDWAYS TECHNOLOGIES | Technical Intern -->
+            <div class="experience-entry">
+                <img src="images/mindandways.png" alt="Mind and ways Technologies" class="company-logo experience-logo" style="height:100px; width :170px; margin: auto;"
+                    onclick="toggleDetails('tech-intern-details')" />
+                <p class="experience-job-info">Technical Intern | Jun 2019 - Aug 2019</p>
+                <div class="experience-details" id="tech-intern-details">
+                    <h3 class="experience-job-title">Technical Intern</h3>
+                    <p class="experience-job-info">Technical Intern | Jun 2019 - Aug 2019 | Bangalore, India</p>
+                    <ul class="experience-description">
+                        <li>Actively participated in the development of a quiz practice project, contributing to all
+                            aspects of the software development lifecycle from design to deployment.</li>
+                        <li>Worked collaboratively with team members to troubleshoot and resolve technical issues,
+                            utilizing strong problem-solving skills and a solutions-oriented approach.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+        <h2 class="projects-title">Some of my Recent Projects</h2>
+        <div class="projects-container">
+            <div class="project-container project-card">
+                <!-- Project details for Expense Tracker -->
+                <img src="images/expenseTracker.png" alt="expense-tracker" loading="lazy" class="project-pic" />
+                <h3 class="project-title">Expense Tracker</h3>
+                <p class="project-details">
+                    Take charge of your finances with our sleek Expense Tracker app. Effortlessly monitor and categorize
+                    your expenses, stay within your budget, and achieve your financial goals. Check out the expenses in
+                    a graph
+                    Simple, intuitive, and
+                    always at your fingertips.
+                </p>
+                <a href="https://github.com/prathikh1998/IBudget.git" target="_blank" class="project-link">Github
+                    Link</a>
+            </div>
+            <div class="project-container project-card">
+                <!-- Project details for Netflix Clone -->
+                <img src="images/netflixClone.png" alt="netflic-clone" loading="lazy" class="project-pic" />
+                <h3 class="project-title">Netflix Clone</h3>
+                <p class="project-details">
+                    Indulge in the ultimate movie and TV show experience with our Netflix Clone app. Enjoy a vast
+                    library of content, personalized recommendations, and seamless streaming across devices. Unwind and
+                    escape into a world of entertainment anytime, anywhere.
+                </p>
+                <a href="#" target="_blank" class="project-link">Github
+                    Link</a>
+            </div>
+            <div class="project-container project-card">
+                <!-- Project details for Pile of Stones -->
+                <img src="images/greenyEarth.jpeg" alt="greeny-earth" loading="lazy" class="project-pic-3" />
+                <h3 class="project-title">Pile of Stones</h3>
+                <p class="project-details">
+                    Enter the captivating world of the Pile of Stones game. Strategically remove stones from the pile on
+                    each turn, challenging your opponent to make calculated moves. With each decision, outwit your rival
+                    and claim victory in this enthralling game of skill and wit.
+                </p>
+                <a href="https://github.com/prathikh1998/PilesOfStonesGame" target="_blank" class="project-link">Github
+                    Link</a>
+            </div>
+        </div>
+
+        <!-- Next set of projects -->
+        <div class="projects-container">
+            <div class="project-container project-card">
+                <!-- Project details for Expense Tracker -->
+                <img src="images/expenseTracker.png" alt="expense-tracker" loading="lazy" class="project-pic" />
+                <h3 class="project-title">Expense Tracker</h3>
+                <p class="project-details">
+                    Take charge of your finances with our sleek Expense Tracker app. Effortlessly monitor and categorize
+                    your expenses, stay within your budget, and achieve your financial goals. Check out the expenses in
+                    a graph
+                    Simple, intuitive, and
+                    always at your fingertips.
+                </p>
+                <a href="https://github.com/prathikh1998/IBudget.git" target="_blank" class="project-link">Github
+                    Link</a>
+            </div>
+            <div class="project-container project-card">
+                <!-- Project details for Netflix Clone -->
+                <img src="images/netflixClone.png" alt="netflic-clone" loading="lazy" class="project-pic" />
+                <h3 class="project-title">Netflix Clone</h3>
+                <p class="project-details">
+                    Indulge in the ultimate movie and TV show experience with our Netflix Clone app. Enjoy a vast
+                    library of content, personalized recommendations, and seamless streaming across devices. Unwind and
+                    escape into a world of entertainment anytime, anywhere.
+                </p>
+                <a href="#" target="_blank" class="project-link">Github
+                    Link</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact section -->
+
+    <section class="contact" id="contact">
+        <h2>Get In Touch With Me</h2>
+        <div class="contact-form-container">
+            <div class="contact-form">
+                <form action="https://formspree.io/f/xyylngw" method="POST">
+                    <div class="form-control">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="sender-name" placeholder="Enter Your Name"
+                            class="input-field" required />
+                    </div>
+                    <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Social accounts - Fixed to the right -->
+
+    <div class="socials">
+        <a href="https://twitter.com/prathikch1998" target="_blank"><img src="icons/icons8-twitter-circled.gif"
+                alt="Twitter" loading="lazy" class="socicon" /></a>
+        <a href="https://leetcode.com/hprathik/" target="_blank"><img src="icons/icons8-instagram.gif" alt="Instagram"
+                loading="lazy" class="socicon" /></a>
+        <a href="https://www.linkedin.com/in/prathikhegdee/" target="_blank"><img
+                src="icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy" class="socicon" /></a>
+        <a href="https://github.com/prathikh1998" target="_blank"><img src="icons/icons8-github.gif" alt="Github"
+                class="socicon" /></a>
+    </div>
+
+
+
+    <!-- Scroll to top -->
+
+    <i class="scroll-up" id="scroll-up"><img src="icons/icons8-upward-arrow.gif" class="socicon up-arrow"
+            alt="scroll-up" /></i>
+
+    <!-- Footer section -->
+
+    <footer>
+        <p class="copy">&copy; Copyright 2023</p>
+        <p class="copy">
+            Built with &#x2661; by
+            <a href="https://twitter.com/koladechris" target="_blank">Prathik Hegde (PH)</a>
+        </p>
+    </footer>
+
+    <!-- Website scripts -->
+    <script src="js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
