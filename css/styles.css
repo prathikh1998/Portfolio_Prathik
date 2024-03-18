@@ -275,56 +275,55 @@ nav ul li {
     flex-wrap: wrap;
   }
   
-  /* Experience section styling */
-.experience {
-    text-align: center;
-    padding: 60px 0; /* Add some vertical spacing */
-    background-color: #fcfcfc; /* Add a background color */
-    margin-bottom: 2rem; /* Add bottom margin to separate from the next section */
-  }
-  
-  .experience-title {
-    margin-bottom: 20px; /* Add some space below the experience title */
-  }
-  
-  .experience-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .experience-entry {
-    margin: 20px;
-    position: relative;
-    border: 2px solid var(--primary-color);
-    border-radius: 20px; /* Increase border-radius for more curved corners */
-    overflow: hidden;
-    width: 250px; /* Set a fixed width for the container */
-}
-
-.company-logo {
-    width: 100%; /* Make the image fill the entire container */
-    height: 100%; /* Make the image fill the entire container */
-    cursor: pointer;
-    display: block;
-    object-fit: cover; /* Make the image maintain its aspect ratio while covering the container */
-    border-radius: 12px; /* Match the container's border-radius for curved corners */
-}
-
-.experience-details {
-    display: none;
-    text-align: left;
-    margin: 10px;
-}
+  /* Experience Section */
 
 
+    .experience-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
-  /* Show the experience details when its container is clicked */
-  .experience-entry.active .experience-details {
-    display: block;
-  }
-  
+    .experience-entry {
+        width: 48%;
+        margin-bottom: 20px;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .company-logo {
+        width: 100px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .experience-details {
+        color: #333;
+    }
+
+    .role {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .company-name {
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 5px;
+    }
+
+    .date {
+        font-size: 14px;
+        color: #999;
+        margin-bottom: 10px;
+    }
+
+    .experience-summary {
+        color: #555;
+        margin-top: 15px;
+    }
 
 .contact {
     margin-top: 2rem;
